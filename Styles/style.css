@@ -1,0 +1,100 @@
+/* Reset básico y estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor de la calculadora */
+.calculadora {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Estilo de la pantalla */
+#pantalla {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Contenedor de botones */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Estilo general de los botones */
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo específico para números */
+.número {
+    background-color: #ffffff;
+}
+
+.número:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilo para operadores */
+.operador {
+    background-color: #e8ecef;
+    color: #2c3e50;
+}
+
+.operador:hover {
+    background-color: #d5dce0;
+}
+
+/* Estilo para el botón de limpiar */
+.limpiar {
+    background-color: #ecf0f1;
+    color: #e74c3c;
+}
+
+.limpiar:hover {
+    background-color: #dfe4e6;
+}
+
+/* Estilo para el botón de igual */
+.igual {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.igual:hover {
+    background-color: #27ae60;
+}
